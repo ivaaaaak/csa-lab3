@@ -1,0 +1,15 @@
+(fun euler_prob1 (n)
+	(set sum 0)
+	(while (!= n 0)
+
+		(if (= (% n 3) 0)
+			(set sum (+ sum n))
+
+			(if (= (% n 5) 0)
+				(set sum (+ sum n))))
+		(set n (- n 1)))
+
+	sum
+)
+
+(print_int (euler_prob1 9))

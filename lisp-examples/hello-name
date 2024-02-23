@@ -1,0 +1,14 @@
+(print_string 'What is your name?')
+(alloc name 30)
+
+(set i 0)
+(set char (read_char))
+
+(while (& (!= char 0) (!= i 30))
+	(set_char name i char)
+	(set i (+ i 1))
+	(set char (read_char)))
+
+(print_string ' Hello, ')
+(print_string name)
+(print_string '!')

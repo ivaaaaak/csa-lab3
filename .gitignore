@@ -1,0 +1,4 @@
+venv
+.idea
+binary
+__pycache__

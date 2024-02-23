@@ -1,0 +1,4 @@
+(set char (read_char))
+(while (!= char 0)
+	(print_char char)
+	(set char (read_char)))
