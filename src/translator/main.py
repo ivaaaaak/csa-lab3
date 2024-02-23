@@ -46,6 +46,5 @@ def main(src_file, debug_dst_file, bin_dst_file):
 if __name__ == "__main__":
     assert len(sys.argv) == 2, "Wrong arguments: main.py <input_file>"
     _, src = sys.argv
-
     debug_dst, bin_dst = "../translator-output/debug", "../translator-output/binary"
     main(src, debug_dst, bin_dst)
