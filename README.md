@@ -140,15 +140,15 @@ symbol ::= "+" | "-" | "%" | "=" | "!="
 
 | Инструкция | адр/безадр | Количество тактов | Описание                               |
 |------------|------------|-------------------|----------------------------------------|
-| `ADD`      |            | 2 - 5             | AC, Z <- AC + arg                      |
-| `SUB`      |            | 2 - 5             | AC, Z <- AC - arg                      |
-| `DIV`      |            | 2 - 5             | AC, Z <- AC / arg                      |
-| `MOD`      |            | 2 - 5             | AC, Z <- AC % arg                      |
-| `LOAD`     |            | 2 - 5             | AC, Z <- arg                           |
+| `ADD`      |            | 1 - 4             | AC, Z <- AC + arg                      |
+| `SUB`      |            | 1 - 4             | AC, Z <- AC - arg                      |
+| `DIV`      |            | 1 - 4             | AC, Z <- AC / arg                      |
+| `MOD`      |            | 1 - 4             | AC, Z <- AC % arg                      |
+| `LOAD`     |            | 1 - 4             | AC, Z <- arg                           |
 | `SAVE`     |            | 2 - 4             | MEM(ADDR) <- AC                        |
 | `PRINT`    | безадр     | 1                 | OUT <- AC                              |
 | `INPUT`    | безадр     | 1                 | AC <- IN                               |
-| `CMP`      |            | 2 - 5             | Z <- AC - arg                          |
+| `CMP`      |            | 1 - 4             | Z <- AC - arg                          |
 | `JZ`       |            | 1                 | if Z == 0 then IP <- arg               |
 | `JMP`      |            | 1                 | IP <- arg                              |
 | `CALL`     |            | 2                 | SP <- SP - 1; MEM(SP) <- IP; IP <- arg |

@@ -62,8 +62,6 @@ class ControlUnit:
             self.process_address_selection(addr_type, arg)
             self.data_path.signal_alu_perform(LeftOperandSelSignal.ACC, RightOperandSelSignal.AR_MEM, opcode, arg)
 
-        self.tick()
-
     def process_address_selection(self, addr_type: AddressingType, addr: int):
         if addr_type is AddressingType.DIRECT:
             self.data_path.latch_addr_reg(ArSelSignal.CU, addr)
@@ -107,7 +105,6 @@ class ControlUnit:
                 self.process_address_selection(addr_type, arg)
                 self.data_path.signal_alu_perform(LeftOperandSelSignal.NULL, RightOperandSelSignal.AR_MEM, Opcode.ADD)
 
-            self.tick()
             self.data_path.latch_acc(AccSelSignal.ALU)
 
         if opcode is Opcode.SAVE:
