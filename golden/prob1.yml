@@ -110,271 +110,271 @@ output: |
   source LoC: 15 machine code instr: 82
   ============================================================
   23
-  instr_counter: 262, ticks: 552
+  instr_counter: 262, ticks: 412
 
 log: |
   DEBUG   machine:simulation    TICK:    0, IP:    0, AR:    0, SP: 2048, ALU:    0, ACC:    0 	jmp 13
   DEBUG   machine:simulation    TICK:    1, IP:   13, AR:    0, SP: 2048, ALU:    0, ACC:    0 	jmp 53
   DEBUG   machine:simulation    TICK:    2, IP:   53, AR:    0, SP: 2048, ALU:    0, ACC:    0 	load #9
-  DEBUG   machine:simulation    TICK:    4, IP:   54, AR:    0, SP: 2048, ALU:    9, ACC:    9 	push
-  DEBUG   machine:simulation    TICK:    6, IP:   55, AR:    0, SP: 2047, ALU:    9, ACC:    9 	call 14
-  DEBUG   machine:simulation    TICK:    8, IP:   14, AR:    0, SP: 2046, ALU:    9, ACC:    9 	load #0
-  DEBUG   machine:simulation    TICK:   10, IP:   15, AR:    0, SP: 2046, ALU:    0, ACC:    0 	push
-  DEBUG   machine:simulation    TICK:   12, IP:   16, AR:    0, SP: 2045, ALU:    0, ACC:    0 	load &2
-  DEBUG   machine:simulation    TICK:   16, IP:   17, AR: 2047, SP: 2045, ALU:    9, ACC:    9 	compare #0
-  DEBUG   machine:simulation    TICK:   18, IP:   18, AR: 2047, SP: 2045, ALU:    9, ACC:    9 	jz 21
-  DEBUG   machine:simulation    TICK:   19, IP:   19, AR: 2047, SP: 2045, ALU:    9, ACC:    9 	load #1
-  DEBUG   machine:simulation    TICK:   21, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
-  DEBUG   machine:simulation    TICK:   22, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
-  DEBUG   machine:simulation    TICK:   23, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
-  DEBUG   machine:simulation    TICK:   27, IP:   24, AR: 2047, SP: 2045, ALU:    9, ACC:    9 	division remainder #3
-  DEBUG   machine:simulation    TICK:   29, IP:   25, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	compare #0
-  DEBUG   machine:simulation    TICK:   31, IP:   26, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 29
-  DEBUG   machine:simulation    TICK:   32, IP:   29, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load #1
-  DEBUG   machine:simulation    TICK:   34, IP:   30, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 35
-  DEBUG   machine:simulation    TICK:   35, IP:   31, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &0
-  DEBUG   machine:simulation    TICK:   39, IP:   32, AR: 2045, SP: 2045, ALU:    0, ACC:    0 	add &2
-  DEBUG   machine:simulation    TICK:   43, IP:   33, AR: 2047, SP: 2045, ALU:    9, ACC:    9 	save &0
-  DEBUG   machine:simulation    TICK:   46, IP:   34, AR: 2045, SP: 2045, ALU: 2045, ACC:    9 	jmp 46
-  DEBUG   machine:simulation    TICK:   47, IP:   46, AR: 2045, SP: 2045, ALU: 2045, ACC:    9 	load &2
-  DEBUG   machine:simulation    TICK:   51, IP:   47, AR: 2047, SP: 2045, ALU:    9, ACC:    9 	subtraction #1
-  DEBUG   machine:simulation    TICK:   53, IP:   48, AR: 2047, SP: 2045, ALU:    8, ACC:    8 	save &2
-  DEBUG   machine:simulation    TICK:   56, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    8 	jmp 16
-  DEBUG   machine:simulation    TICK:   57, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    8 	load &2
-  DEBUG   machine:simulation    TICK:   61, IP:   17, AR: 2047, SP: 2045, ALU:    8, ACC:    8 	compare #0
-  DEBUG   machine:simulation    TICK:   63, IP:   18, AR: 2047, SP: 2045, ALU:    8, ACC:    8 	jz 21
-  DEBUG   machine:simulation    TICK:   64, IP:   19, AR: 2047, SP: 2045, ALU:    8, ACC:    8 	load #1
-  DEBUG   machine:simulation    TICK:   66, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
-  DEBUG   machine:simulation    TICK:   67, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
-  DEBUG   machine:simulation    TICK:   68, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
-  DEBUG   machine:simulation    TICK:   72, IP:   24, AR: 2047, SP: 2045, ALU:    8, ACC:    8 	division remainder #3
-  DEBUG   machine:simulation    TICK:   74, IP:   25, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	compare #0
-  DEBUG   machine:simulation    TICK:   76, IP:   26, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	jz 29
-  DEBUG   machine:simulation    TICK:   77, IP:   27, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	load #0
-  DEBUG   machine:simulation    TICK:   79, IP:   28, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 30
-  DEBUG   machine:simulation    TICK:   80, IP:   30, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 35
-  DEBUG   machine:simulation    TICK:   81, IP:   35, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
-  DEBUG   machine:simulation    TICK:   85, IP:   36, AR: 2047, SP: 2045, ALU:    8, ACC:    8 	division remainder #5
-  DEBUG   machine:simulation    TICK:   87, IP:   37, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	compare #0
-  DEBUG   machine:simulation    TICK:   89, IP:   38, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	jz 41
-  DEBUG   machine:simulation    TICK:   90, IP:   39, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	load #0
-  DEBUG   machine:simulation    TICK:   92, IP:   40, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 42
-  DEBUG   machine:simulation    TICK:   93, IP:   42, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 46
-  DEBUG   machine:simulation    TICK:   94, IP:   46, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
-  DEBUG   machine:simulation    TICK:   98, IP:   47, AR: 2047, SP: 2045, ALU:    8, ACC:    8 	subtraction #1
-  DEBUG   machine:simulation    TICK:  100, IP:   48, AR: 2047, SP: 2045, ALU:    7, ACC:    7 	save &2
-  DEBUG   machine:simulation    TICK:  103, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    7 	jmp 16
-  DEBUG   machine:simulation    TICK:  104, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    7 	load &2
-  DEBUG   machine:simulation    TICK:  108, IP:   17, AR: 2047, SP: 2045, ALU:    7, ACC:    7 	compare #0
-  DEBUG   machine:simulation    TICK:  110, IP:   18, AR: 2047, SP: 2045, ALU:    7, ACC:    7 	jz 21
-  DEBUG   machine:simulation    TICK:  111, IP:   19, AR: 2047, SP: 2045, ALU:    7, ACC:    7 	load #1
-  DEBUG   machine:simulation    TICK:  113, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
-  DEBUG   machine:simulation    TICK:  114, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
-  DEBUG   machine:simulation    TICK:  115, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
-  DEBUG   machine:simulation    TICK:  119, IP:   24, AR: 2047, SP: 2045, ALU:    7, ACC:    7 	division remainder #3
-  DEBUG   machine:simulation    TICK:  121, IP:   25, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	compare #0
-  DEBUG   machine:simulation    TICK:  123, IP:   26, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 29
-  DEBUG   machine:simulation    TICK:  124, IP:   27, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load #0
-  DEBUG   machine:simulation    TICK:  126, IP:   28, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 30
-  DEBUG   machine:simulation    TICK:  127, IP:   30, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 35
-  DEBUG   machine:simulation    TICK:  128, IP:   35, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
-  DEBUG   machine:simulation    TICK:  132, IP:   36, AR: 2047, SP: 2045, ALU:    7, ACC:    7 	division remainder #5
-  DEBUG   machine:simulation    TICK:  134, IP:   37, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	compare #0
-  DEBUG   machine:simulation    TICK:  136, IP:   38, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	jz 41
-  DEBUG   machine:simulation    TICK:  137, IP:   39, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	load #0
-  DEBUG   machine:simulation    TICK:  139, IP:   40, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 42
-  DEBUG   machine:simulation    TICK:  140, IP:   42, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 46
-  DEBUG   machine:simulation    TICK:  141, IP:   46, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
-  DEBUG   machine:simulation    TICK:  145, IP:   47, AR: 2047, SP: 2045, ALU:    7, ACC:    7 	subtraction #1
-  DEBUG   machine:simulation    TICK:  147, IP:   48, AR: 2047, SP: 2045, ALU:    6, ACC:    6 	save &2
-  DEBUG   machine:simulation    TICK:  150, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    6 	jmp 16
-  DEBUG   machine:simulation    TICK:  151, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    6 	load &2
-  DEBUG   machine:simulation    TICK:  155, IP:   17, AR: 2047, SP: 2045, ALU:    6, ACC:    6 	compare #0
-  DEBUG   machine:simulation    TICK:  157, IP:   18, AR: 2047, SP: 2045, ALU:    6, ACC:    6 	jz 21
-  DEBUG   machine:simulation    TICK:  158, IP:   19, AR: 2047, SP: 2045, ALU:    6, ACC:    6 	load #1
-  DEBUG   machine:simulation    TICK:  160, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
-  DEBUG   machine:simulation    TICK:  161, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
-  DEBUG   machine:simulation    TICK:  162, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
-  DEBUG   machine:simulation    TICK:  166, IP:   24, AR: 2047, SP: 2045, ALU:    6, ACC:    6 	division remainder #3
-  DEBUG   machine:simulation    TICK:  168, IP:   25, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	compare #0
-  DEBUG   machine:simulation    TICK:  170, IP:   26, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 29
-  DEBUG   machine:simulation    TICK:  171, IP:   29, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load #1
-  DEBUG   machine:simulation    TICK:  173, IP:   30, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 35
-  DEBUG   machine:simulation    TICK:  174, IP:   31, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &0
-  DEBUG   machine:simulation    TICK:  178, IP:   32, AR: 2045, SP: 2045, ALU:    9, ACC:    9 	add &2
-  DEBUG   machine:simulation    TICK:  182, IP:   33, AR: 2047, SP: 2045, ALU:   15, ACC:   15 	save &0
-  DEBUG   machine:simulation    TICK:  185, IP:   34, AR: 2045, SP: 2045, ALU: 2045, ACC:   15 	jmp 46
-  DEBUG   machine:simulation    TICK:  186, IP:   46, AR: 2045, SP: 2045, ALU: 2045, ACC:   15 	load &2
-  DEBUG   machine:simulation    TICK:  190, IP:   47, AR: 2047, SP: 2045, ALU:    6, ACC:    6 	subtraction #1
-  DEBUG   machine:simulation    TICK:  192, IP:   48, AR: 2047, SP: 2045, ALU:    5, ACC:    5 	save &2
-  DEBUG   machine:simulation    TICK:  195, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    5 	jmp 16
-  DEBUG   machine:simulation    TICK:  196, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    5 	load &2
-  DEBUG   machine:simulation    TICK:  200, IP:   17, AR: 2047, SP: 2045, ALU:    5, ACC:    5 	compare #0
-  DEBUG   machine:simulation    TICK:  202, IP:   18, AR: 2047, SP: 2045, ALU:    5, ACC:    5 	jz 21
-  DEBUG   machine:simulation    TICK:  203, IP:   19, AR: 2047, SP: 2045, ALU:    5, ACC:    5 	load #1
-  DEBUG   machine:simulation    TICK:  205, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
-  DEBUG   machine:simulation    TICK:  206, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
-  DEBUG   machine:simulation    TICK:  207, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
-  DEBUG   machine:simulation    TICK:  211, IP:   24, AR: 2047, SP: 2045, ALU:    5, ACC:    5 	division remainder #3
-  DEBUG   machine:simulation    TICK:  213, IP:   25, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	compare #0
-  DEBUG   machine:simulation    TICK:  215, IP:   26, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	jz 29
-  DEBUG   machine:simulation    TICK:  216, IP:   27, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	load #0
-  DEBUG   machine:simulation    TICK:  218, IP:   28, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 30
-  DEBUG   machine:simulation    TICK:  219, IP:   30, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 35
-  DEBUG   machine:simulation    TICK:  220, IP:   35, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
-  DEBUG   machine:simulation    TICK:  224, IP:   36, AR: 2047, SP: 2045, ALU:    5, ACC:    5 	division remainder #5
-  DEBUG   machine:simulation    TICK:  226, IP:   37, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	compare #0
-  DEBUG   machine:simulation    TICK:  228, IP:   38, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 41
-  DEBUG   machine:simulation    TICK:  229, IP:   41, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load #1
-  DEBUG   machine:simulation    TICK:  231, IP:   42, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 46
-  DEBUG   machine:simulation    TICK:  232, IP:   43, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &0
-  DEBUG   machine:simulation    TICK:  236, IP:   44, AR: 2045, SP: 2045, ALU:   15, ACC:   15 	add &2
-  DEBUG   machine:simulation    TICK:  240, IP:   45, AR: 2047, SP: 2045, ALU:   20, ACC:   20 	save &0
-  DEBUG   machine:simulation    TICK:  243, IP:   46, AR: 2045, SP: 2045, ALU: 2045, ACC:   20 	load &2
-  DEBUG   machine:simulation    TICK:  247, IP:   47, AR: 2047, SP: 2045, ALU:    5, ACC:    5 	subtraction #1
-  DEBUG   machine:simulation    TICK:  249, IP:   48, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	save &2
-  DEBUG   machine:simulation    TICK:  252, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    4 	jmp 16
-  DEBUG   machine:simulation    TICK:  253, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    4 	load &2
-  DEBUG   machine:simulation    TICK:  257, IP:   17, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	compare #0
-  DEBUG   machine:simulation    TICK:  259, IP:   18, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	jz 21
-  DEBUG   machine:simulation    TICK:  260, IP:   19, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	load #1
+  DEBUG   machine:simulation    TICK:    3, IP:   54, AR:    0, SP: 2048, ALU:    9, ACC:    9 	push
+  DEBUG   machine:simulation    TICK:    5, IP:   55, AR:    0, SP: 2047, ALU:    9, ACC:    9 	call 14
+  DEBUG   machine:simulation    TICK:    7, IP:   14, AR:    0, SP: 2046, ALU:    9, ACC:    9 	load #0
+  DEBUG   machine:simulation    TICK:    8, IP:   15, AR:    0, SP: 2046, ALU:    0, ACC:    0 	push
+  DEBUG   machine:simulation    TICK:   10, IP:   16, AR:    0, SP: 2045, ALU:    0, ACC:    0 	load &2
+  DEBUG   machine:simulation    TICK:   13, IP:   17, AR: 2047, SP: 2045, ALU:    9, ACC:    9 	compare #0
+  DEBUG   machine:simulation    TICK:   14, IP:   18, AR: 2047, SP: 2045, ALU:    9, ACC:    9 	jz 21
+  DEBUG   machine:simulation    TICK:   15, IP:   19, AR: 2047, SP: 2045, ALU:    9, ACC:    9 	load #1
+  DEBUG   machine:simulation    TICK:   16, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
+  DEBUG   machine:simulation    TICK:   17, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
+  DEBUG   machine:simulation    TICK:   18, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
+  DEBUG   machine:simulation    TICK:   21, IP:   24, AR: 2047, SP: 2045, ALU:    9, ACC:    9 	division remainder #3
+  DEBUG   machine:simulation    TICK:   22, IP:   25, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	compare #0
+  DEBUG   machine:simulation    TICK:   23, IP:   26, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 29
+  DEBUG   machine:simulation    TICK:   24, IP:   29, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load #1
+  DEBUG   machine:simulation    TICK:   25, IP:   30, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 35
+  DEBUG   machine:simulation    TICK:   26, IP:   31, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &0
+  DEBUG   machine:simulation    TICK:   29, IP:   32, AR: 2045, SP: 2045, ALU:    0, ACC:    0 	add &2
+  DEBUG   machine:simulation    TICK:   32, IP:   33, AR: 2047, SP: 2045, ALU:    9, ACC:    9 	save &0
+  DEBUG   machine:simulation    TICK:   35, IP:   34, AR: 2045, SP: 2045, ALU: 2045, ACC:    9 	jmp 46
+  DEBUG   machine:simulation    TICK:   36, IP:   46, AR: 2045, SP: 2045, ALU: 2045, ACC:    9 	load &2
+  DEBUG   machine:simulation    TICK:   39, IP:   47, AR: 2047, SP: 2045, ALU:    9, ACC:    9 	subtraction #1
+  DEBUG   machine:simulation    TICK:   40, IP:   48, AR: 2047, SP: 2045, ALU:    8, ACC:    8 	save &2
+  DEBUG   machine:simulation    TICK:   43, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    8 	jmp 16
+  DEBUG   machine:simulation    TICK:   44, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    8 	load &2
+  DEBUG   machine:simulation    TICK:   47, IP:   17, AR: 2047, SP: 2045, ALU:    8, ACC:    8 	compare #0
+  DEBUG   machine:simulation    TICK:   48, IP:   18, AR: 2047, SP: 2045, ALU:    8, ACC:    8 	jz 21
+  DEBUG   machine:simulation    TICK:   49, IP:   19, AR: 2047, SP: 2045, ALU:    8, ACC:    8 	load #1
+  DEBUG   machine:simulation    TICK:   50, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
+  DEBUG   machine:simulation    TICK:   51, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
+  DEBUG   machine:simulation    TICK:   52, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
+  DEBUG   machine:simulation    TICK:   55, IP:   24, AR: 2047, SP: 2045, ALU:    8, ACC:    8 	division remainder #3
+  DEBUG   machine:simulation    TICK:   56, IP:   25, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	compare #0
+  DEBUG   machine:simulation    TICK:   57, IP:   26, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	jz 29
+  DEBUG   machine:simulation    TICK:   58, IP:   27, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	load #0
+  DEBUG   machine:simulation    TICK:   59, IP:   28, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 30
+  DEBUG   machine:simulation    TICK:   60, IP:   30, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 35
+  DEBUG   machine:simulation    TICK:   61, IP:   35, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
+  DEBUG   machine:simulation    TICK:   64, IP:   36, AR: 2047, SP: 2045, ALU:    8, ACC:    8 	division remainder #5
+  DEBUG   machine:simulation    TICK:   65, IP:   37, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	compare #0
+  DEBUG   machine:simulation    TICK:   66, IP:   38, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	jz 41
+  DEBUG   machine:simulation    TICK:   67, IP:   39, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	load #0
+  DEBUG   machine:simulation    TICK:   68, IP:   40, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 42
+  DEBUG   machine:simulation    TICK:   69, IP:   42, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 46
+  DEBUG   machine:simulation    TICK:   70, IP:   46, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
+  DEBUG   machine:simulation    TICK:   73, IP:   47, AR: 2047, SP: 2045, ALU:    8, ACC:    8 	subtraction #1
+  DEBUG   machine:simulation    TICK:   74, IP:   48, AR: 2047, SP: 2045, ALU:    7, ACC:    7 	save &2
+  DEBUG   machine:simulation    TICK:   77, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    7 	jmp 16
+  DEBUG   machine:simulation    TICK:   78, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    7 	load &2
+  DEBUG   machine:simulation    TICK:   81, IP:   17, AR: 2047, SP: 2045, ALU:    7, ACC:    7 	compare #0
+  DEBUG   machine:simulation    TICK:   82, IP:   18, AR: 2047, SP: 2045, ALU:    7, ACC:    7 	jz 21
+  DEBUG   machine:simulation    TICK:   83, IP:   19, AR: 2047, SP: 2045, ALU:    7, ACC:    7 	load #1
+  DEBUG   machine:simulation    TICK:   84, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
+  DEBUG   machine:simulation    TICK:   85, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
+  DEBUG   machine:simulation    TICK:   86, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
+  DEBUG   machine:simulation    TICK:   89, IP:   24, AR: 2047, SP: 2045, ALU:    7, ACC:    7 	division remainder #3
+  DEBUG   machine:simulation    TICK:   90, IP:   25, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	compare #0
+  DEBUG   machine:simulation    TICK:   91, IP:   26, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 29
+  DEBUG   machine:simulation    TICK:   92, IP:   27, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load #0
+  DEBUG   machine:simulation    TICK:   93, IP:   28, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 30
+  DEBUG   machine:simulation    TICK:   94, IP:   30, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 35
+  DEBUG   machine:simulation    TICK:   95, IP:   35, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
+  DEBUG   machine:simulation    TICK:   98, IP:   36, AR: 2047, SP: 2045, ALU:    7, ACC:    7 	division remainder #5
+  DEBUG   machine:simulation    TICK:   99, IP:   37, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	compare #0
+  DEBUG   machine:simulation    TICK:  100, IP:   38, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	jz 41
+  DEBUG   machine:simulation    TICK:  101, IP:   39, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	load #0
+  DEBUG   machine:simulation    TICK:  102, IP:   40, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 42
+  DEBUG   machine:simulation    TICK:  103, IP:   42, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 46
+  DEBUG   machine:simulation    TICK:  104, IP:   46, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
+  DEBUG   machine:simulation    TICK:  107, IP:   47, AR: 2047, SP: 2045, ALU:    7, ACC:    7 	subtraction #1
+  DEBUG   machine:simulation    TICK:  108, IP:   48, AR: 2047, SP: 2045, ALU:    6, ACC:    6 	save &2
+  DEBUG   machine:simulation    TICK:  111, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    6 	jmp 16
+  DEBUG   machine:simulation    TICK:  112, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    6 	load &2
+  DEBUG   machine:simulation    TICK:  115, IP:   17, AR: 2047, SP: 2045, ALU:    6, ACC:    6 	compare #0
+  DEBUG   machine:simulation    TICK:  116, IP:   18, AR: 2047, SP: 2045, ALU:    6, ACC:    6 	jz 21
+  DEBUG   machine:simulation    TICK:  117, IP:   19, AR: 2047, SP: 2045, ALU:    6, ACC:    6 	load #1
+  DEBUG   machine:simulation    TICK:  118, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
+  DEBUG   machine:simulation    TICK:  119, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
+  DEBUG   machine:simulation    TICK:  120, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
+  DEBUG   machine:simulation    TICK:  123, IP:   24, AR: 2047, SP: 2045, ALU:    6, ACC:    6 	division remainder #3
+  DEBUG   machine:simulation    TICK:  124, IP:   25, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	compare #0
+  DEBUG   machine:simulation    TICK:  125, IP:   26, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 29
+  DEBUG   machine:simulation    TICK:  126, IP:   29, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load #1
+  DEBUG   machine:simulation    TICK:  127, IP:   30, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 35
+  DEBUG   machine:simulation    TICK:  128, IP:   31, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &0
+  DEBUG   machine:simulation    TICK:  131, IP:   32, AR: 2045, SP: 2045, ALU:    9, ACC:    9 	add &2
+  DEBUG   machine:simulation    TICK:  134, IP:   33, AR: 2047, SP: 2045, ALU:   15, ACC:   15 	save &0
+  DEBUG   machine:simulation    TICK:  137, IP:   34, AR: 2045, SP: 2045, ALU: 2045, ACC:   15 	jmp 46
+  DEBUG   machine:simulation    TICK:  138, IP:   46, AR: 2045, SP: 2045, ALU: 2045, ACC:   15 	load &2
+  DEBUG   machine:simulation    TICK:  141, IP:   47, AR: 2047, SP: 2045, ALU:    6, ACC:    6 	subtraction #1
+  DEBUG   machine:simulation    TICK:  142, IP:   48, AR: 2047, SP: 2045, ALU:    5, ACC:    5 	save &2
+  DEBUG   machine:simulation    TICK:  145, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    5 	jmp 16
+  DEBUG   machine:simulation    TICK:  146, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    5 	load &2
+  DEBUG   machine:simulation    TICK:  149, IP:   17, AR: 2047, SP: 2045, ALU:    5, ACC:    5 	compare #0
+  DEBUG   machine:simulation    TICK:  150, IP:   18, AR: 2047, SP: 2045, ALU:    5, ACC:    5 	jz 21
+  DEBUG   machine:simulation    TICK:  151, IP:   19, AR: 2047, SP: 2045, ALU:    5, ACC:    5 	load #1
+  DEBUG   machine:simulation    TICK:  152, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
+  DEBUG   machine:simulation    TICK:  153, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
+  DEBUG   machine:simulation    TICK:  154, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
+  DEBUG   machine:simulation    TICK:  157, IP:   24, AR: 2047, SP: 2045, ALU:    5, ACC:    5 	division remainder #3
+  DEBUG   machine:simulation    TICK:  158, IP:   25, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	compare #0
+  DEBUG   machine:simulation    TICK:  159, IP:   26, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	jz 29
+  DEBUG   machine:simulation    TICK:  160, IP:   27, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	load #0
+  DEBUG   machine:simulation    TICK:  161, IP:   28, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 30
+  DEBUG   machine:simulation    TICK:  162, IP:   30, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 35
+  DEBUG   machine:simulation    TICK:  163, IP:   35, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
+  DEBUG   machine:simulation    TICK:  166, IP:   36, AR: 2047, SP: 2045, ALU:    5, ACC:    5 	division remainder #5
+  DEBUG   machine:simulation    TICK:  167, IP:   37, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	compare #0
+  DEBUG   machine:simulation    TICK:  168, IP:   38, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 41
+  DEBUG   machine:simulation    TICK:  169, IP:   41, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load #1
+  DEBUG   machine:simulation    TICK:  170, IP:   42, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 46
+  DEBUG   machine:simulation    TICK:  171, IP:   43, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &0
+  DEBUG   machine:simulation    TICK:  174, IP:   44, AR: 2045, SP: 2045, ALU:   15, ACC:   15 	add &2
+  DEBUG   machine:simulation    TICK:  177, IP:   45, AR: 2047, SP: 2045, ALU:   20, ACC:   20 	save &0
+  DEBUG   machine:simulation    TICK:  180, IP:   46, AR: 2045, SP: 2045, ALU: 2045, ACC:   20 	load &2
+  DEBUG   machine:simulation    TICK:  183, IP:   47, AR: 2047, SP: 2045, ALU:    5, ACC:    5 	subtraction #1
+  DEBUG   machine:simulation    TICK:  184, IP:   48, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	save &2
+  DEBUG   machine:simulation    TICK:  187, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    4 	jmp 16
+  DEBUG   machine:simulation    TICK:  188, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    4 	load &2
+  DEBUG   machine:simulation    TICK:  191, IP:   17, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	compare #0
+  DEBUG   machine:simulation    TICK:  192, IP:   18, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	jz 21
+  DEBUG   machine:simulation    TICK:  193, IP:   19, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	load #1
+  DEBUG   machine:simulation    TICK:  194, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
+  DEBUG   machine:simulation    TICK:  195, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
+  DEBUG   machine:simulation    TICK:  196, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
+  DEBUG   machine:simulation    TICK:  199, IP:   24, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	division remainder #3
+  DEBUG   machine:simulation    TICK:  200, IP:   25, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	compare #0
+  DEBUG   machine:simulation    TICK:  201, IP:   26, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 29
+  DEBUG   machine:simulation    TICK:  202, IP:   27, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load #0
+  DEBUG   machine:simulation    TICK:  203, IP:   28, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 30
+  DEBUG   machine:simulation    TICK:  204, IP:   30, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 35
+  DEBUG   machine:simulation    TICK:  205, IP:   35, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
+  DEBUG   machine:simulation    TICK:  208, IP:   36, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	division remainder #5
+  DEBUG   machine:simulation    TICK:  209, IP:   37, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	compare #0
+  DEBUG   machine:simulation    TICK:  210, IP:   38, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	jz 41
+  DEBUG   machine:simulation    TICK:  211, IP:   39, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	load #0
+  DEBUG   machine:simulation    TICK:  212, IP:   40, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 42
+  DEBUG   machine:simulation    TICK:  213, IP:   42, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 46
+  DEBUG   machine:simulation    TICK:  214, IP:   46, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
+  DEBUG   machine:simulation    TICK:  217, IP:   47, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	subtraction #1
+  DEBUG   machine:simulation    TICK:  218, IP:   48, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	save &2
+  DEBUG   machine:simulation    TICK:  221, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    3 	jmp 16
+  DEBUG   machine:simulation    TICK:  222, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    3 	load &2
+  DEBUG   machine:simulation    TICK:  225, IP:   17, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	compare #0
+  DEBUG   machine:simulation    TICK:  226, IP:   18, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	jz 21
+  DEBUG   machine:simulation    TICK:  227, IP:   19, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	load #1
+  DEBUG   machine:simulation    TICK:  228, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
+  DEBUG   machine:simulation    TICK:  229, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
+  DEBUG   machine:simulation    TICK:  230, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
+  DEBUG   machine:simulation    TICK:  233, IP:   24, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	division remainder #3
+  DEBUG   machine:simulation    TICK:  234, IP:   25, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	compare #0
+  DEBUG   machine:simulation    TICK:  235, IP:   26, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 29
+  DEBUG   machine:simulation    TICK:  236, IP:   29, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load #1
+  DEBUG   machine:simulation    TICK:  237, IP:   30, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 35
+  DEBUG   machine:simulation    TICK:  238, IP:   31, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &0
+  DEBUG   machine:simulation    TICK:  241, IP:   32, AR: 2045, SP: 2045, ALU:   20, ACC:   20 	add &2
+  DEBUG   machine:simulation    TICK:  244, IP:   33, AR: 2047, SP: 2045, ALU:   23, ACC:   23 	save &0
+  DEBUG   machine:simulation    TICK:  247, IP:   34, AR: 2045, SP: 2045, ALU: 2045, ACC:   23 	jmp 46
+  DEBUG   machine:simulation    TICK:  248, IP:   46, AR: 2045, SP: 2045, ALU: 2045, ACC:   23 	load &2
+  DEBUG   machine:simulation    TICK:  251, IP:   47, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	subtraction #1
+  DEBUG   machine:simulation    TICK:  252, IP:   48, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	save &2
+  DEBUG   machine:simulation    TICK:  255, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    2 	jmp 16
+  DEBUG   machine:simulation    TICK:  256, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    2 	load &2
+  DEBUG   machine:simulation    TICK:  259, IP:   17, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	compare #0
+  DEBUG   machine:simulation    TICK:  260, IP:   18, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	jz 21
+  DEBUG   machine:simulation    TICK:  261, IP:   19, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	load #1
   DEBUG   machine:simulation    TICK:  262, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
   DEBUG   machine:simulation    TICK:  263, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
   DEBUG   machine:simulation    TICK:  264, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
-  DEBUG   machine:simulation    TICK:  268, IP:   24, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	division remainder #3
-  DEBUG   machine:simulation    TICK:  270, IP:   25, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	compare #0
-  DEBUG   machine:simulation    TICK:  272, IP:   26, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 29
-  DEBUG   machine:simulation    TICK:  273, IP:   27, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load #0
-  DEBUG   machine:simulation    TICK:  275, IP:   28, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 30
-  DEBUG   machine:simulation    TICK:  276, IP:   30, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 35
-  DEBUG   machine:simulation    TICK:  277, IP:   35, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
-  DEBUG   machine:simulation    TICK:  281, IP:   36, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	division remainder #5
-  DEBUG   machine:simulation    TICK:  283, IP:   37, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	compare #0
-  DEBUG   machine:simulation    TICK:  285, IP:   38, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	jz 41
-  DEBUG   machine:simulation    TICK:  286, IP:   39, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	load #0
-  DEBUG   machine:simulation    TICK:  288, IP:   40, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 42
-  DEBUG   machine:simulation    TICK:  289, IP:   42, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 46
-  DEBUG   machine:simulation    TICK:  290, IP:   46, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
-  DEBUG   machine:simulation    TICK:  294, IP:   47, AR: 2047, SP: 2045, ALU:    4, ACC:    4 	subtraction #1
-  DEBUG   machine:simulation    TICK:  296, IP:   48, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	save &2
-  DEBUG   machine:simulation    TICK:  299, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    3 	jmp 16
-  DEBUG   machine:simulation    TICK:  300, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    3 	load &2
-  DEBUG   machine:simulation    TICK:  304, IP:   17, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	compare #0
-  DEBUG   machine:simulation    TICK:  306, IP:   18, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	jz 21
-  DEBUG   machine:simulation    TICK:  307, IP:   19, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	load #1
-  DEBUG   machine:simulation    TICK:  309, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
-  DEBUG   machine:simulation    TICK:  310, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
-  DEBUG   machine:simulation    TICK:  311, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
-  DEBUG   machine:simulation    TICK:  315, IP:   24, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	division remainder #3
-  DEBUG   machine:simulation    TICK:  317, IP:   25, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	compare #0
-  DEBUG   machine:simulation    TICK:  319, IP:   26, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 29
-  DEBUG   machine:simulation    TICK:  320, IP:   29, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load #1
-  DEBUG   machine:simulation    TICK:  322, IP:   30, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 35
-  DEBUG   machine:simulation    TICK:  323, IP:   31, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &0
-  DEBUG   machine:simulation    TICK:  327, IP:   32, AR: 2045, SP: 2045, ALU:   20, ACC:   20 	add &2
-  DEBUG   machine:simulation    TICK:  331, IP:   33, AR: 2047, SP: 2045, ALU:   23, ACC:   23 	save &0
-  DEBUG   machine:simulation    TICK:  334, IP:   34, AR: 2045, SP: 2045, ALU: 2045, ACC:   23 	jmp 46
-  DEBUG   machine:simulation    TICK:  335, IP:   46, AR: 2045, SP: 2045, ALU: 2045, ACC:   23 	load &2
-  DEBUG   machine:simulation    TICK:  339, IP:   47, AR: 2047, SP: 2045, ALU:    3, ACC:    3 	subtraction #1
-  DEBUG   machine:simulation    TICK:  341, IP:   48, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	save &2
-  DEBUG   machine:simulation    TICK:  344, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    2 	jmp 16
-  DEBUG   machine:simulation    TICK:  345, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    2 	load &2
-  DEBUG   machine:simulation    TICK:  349, IP:   17, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	compare #0
-  DEBUG   machine:simulation    TICK:  351, IP:   18, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	jz 21
-  DEBUG   machine:simulation    TICK:  352, IP:   19, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	load #1
-  DEBUG   machine:simulation    TICK:  354, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
-  DEBUG   machine:simulation    TICK:  355, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
-  DEBUG   machine:simulation    TICK:  356, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
-  DEBUG   machine:simulation    TICK:  360, IP:   24, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	division remainder #3
-  DEBUG   machine:simulation    TICK:  362, IP:   25, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	compare #0
-  DEBUG   machine:simulation    TICK:  364, IP:   26, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	jz 29
-  DEBUG   machine:simulation    TICK:  365, IP:   27, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	load #0
-  DEBUG   machine:simulation    TICK:  367, IP:   28, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 30
-  DEBUG   machine:simulation    TICK:  368, IP:   30, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 35
-  DEBUG   machine:simulation    TICK:  369, IP:   35, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
-  DEBUG   machine:simulation    TICK:  373, IP:   36, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	division remainder #5
-  DEBUG   machine:simulation    TICK:  375, IP:   37, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	compare #0
-  DEBUG   machine:simulation    TICK:  377, IP:   38, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	jz 41
-  DEBUG   machine:simulation    TICK:  378, IP:   39, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	load #0
-  DEBUG   machine:simulation    TICK:  380, IP:   40, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 42
-  DEBUG   machine:simulation    TICK:  381, IP:   42, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 46
-  DEBUG   machine:simulation    TICK:  382, IP:   46, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
-  DEBUG   machine:simulation    TICK:  386, IP:   47, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	subtraction #1
-  DEBUG   machine:simulation    TICK:  388, IP:   48, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	save &2
-  DEBUG   machine:simulation    TICK:  391, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    1 	jmp 16
-  DEBUG   machine:simulation    TICK:  392, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    1 	load &2
-  DEBUG   machine:simulation    TICK:  396, IP:   17, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	compare #0
-  DEBUG   machine:simulation    TICK:  398, IP:   18, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 21
-  DEBUG   machine:simulation    TICK:  399, IP:   19, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load #1
-  DEBUG   machine:simulation    TICK:  401, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
-  DEBUG   machine:simulation    TICK:  402, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
-  DEBUG   machine:simulation    TICK:  403, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
-  DEBUG   machine:simulation    TICK:  407, IP:   24, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	division remainder #3
-  DEBUG   machine:simulation    TICK:  409, IP:   25, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	compare #0
-  DEBUG   machine:simulation    TICK:  411, IP:   26, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 29
-  DEBUG   machine:simulation    TICK:  412, IP:   27, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load #0
-  DEBUG   machine:simulation    TICK:  414, IP:   28, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 30
-  DEBUG   machine:simulation    TICK:  415, IP:   30, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 35
-  DEBUG   machine:simulation    TICK:  416, IP:   35, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
-  DEBUG   machine:simulation    TICK:  420, IP:   36, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	division remainder #5
-  DEBUG   machine:simulation    TICK:  422, IP:   37, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	compare #0
-  DEBUG   machine:simulation    TICK:  424, IP:   38, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 41
-  DEBUG   machine:simulation    TICK:  425, IP:   39, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load #0
-  DEBUG   machine:simulation    TICK:  427, IP:   40, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 42
-  DEBUG   machine:simulation    TICK:  428, IP:   42, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 46
-  DEBUG   machine:simulation    TICK:  429, IP:   46, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
-  DEBUG   machine:simulation    TICK:  433, IP:   47, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	subtraction #1
-  DEBUG   machine:simulation    TICK:  435, IP:   48, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	save &2
-  DEBUG   machine:simulation    TICK:  438, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    0 	jmp 16
-  DEBUG   machine:simulation    TICK:  439, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    0 	load &2
-  DEBUG   machine:simulation    TICK:  443, IP:   17, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	compare #0
-  DEBUG   machine:simulation    TICK:  445, IP:   18, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 21
-  DEBUG   machine:simulation    TICK:  446, IP:   21, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load #0
-  DEBUG   machine:simulation    TICK:  448, IP:   22, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 50
-  DEBUG   machine:simulation    TICK:  449, IP:   50, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &0
-  DEBUG   machine:simulation    TICK:  453, IP:   51, AR: 2045, SP: 2045, ALU:   23, ACC:   23 	pop
-  DEBUG   machine:simulation    TICK:  454, IP:   52, AR: 2045, SP: 2046, ALU:   23, ACC:   23 	return
-  DEBUG   machine:simulation    TICK:  456, IP:   56, AR: 2045, SP: 2047, ALU:   56, ACC:   23 	pop
-  DEBUG   machine:simulation    TICK:  457, IP:   57, AR: 2045, SP: 2048, ALU:   56, ACC:   23 	push
-  DEBUG   machine:simulation    TICK:  459, IP:   58, AR: 2045, SP: 2047, ALU:   56, ACC:   23 	load &0
-  DEBUG   machine:simulation    TICK:  463, IP:   59, AR: 2047, SP: 2047, ALU:   23, ACC:   23 	division remainder #10
-  DEBUG   machine:simulation    TICK:  465, IP:   60, AR: 2047, SP: 2047, ALU:    3, ACC:    3 	add #48
-  DEBUG   machine:simulation    TICK:  467, IP:   61, AR: 2047, SP: 2047, ALU:   51, ACC:   51 	save $12
-  DEBUG   machine:simulation    TICK:  471, IP:   62, AR:    2, SP: 2047, ALU:    2, ACC:   51 	load &0
-  DEBUG   machine:simulation    TICK:  475, IP:   63, AR: 2047, SP: 2047, ALU:   23, ACC:   23 	division #10
-  DEBUG   machine:simulation    TICK:  477, IP:   64, AR: 2047, SP: 2047, ALU:    2, ACC:    2 	jz 70
-  DEBUG   machine:simulation    TICK:  478, IP:   65, AR: 2047, SP: 2047, ALU:    2, ACC:    2 	save &0
-  DEBUG   machine:simulation    TICK:  481, IP:   66, AR: 2047, SP: 2047, ALU: 2047, ACC:    2 	load 12
-  DEBUG   machine:simulation    TICK:  484, IP:   67, AR:   12, SP: 2047, ALU:    2, ACC:    2 	add #1
-  DEBUG   machine:simulation    TICK:  486, IP:   68, AR:   12, SP: 2047, ALU:    3, ACC:    3 	save 12
-  DEBUG   machine:simulation    TICK:  488, IP:   69, AR:   12, SP: 2047, ALU:    3, ACC:    3 	jmp 58
-  DEBUG   machine:simulation    TICK:  489, IP:   58, AR:   12, SP: 2047, ALU:    3, ACC:    3 	load &0
-  DEBUG   machine:simulation    TICK:  493, IP:   59, AR: 2047, SP: 2047, ALU:    2, ACC:    2 	division remainder #10
-  DEBUG   machine:simulation    TICK:  495, IP:   60, AR: 2047, SP: 2047, ALU:    2, ACC:    2 	add #48
-  DEBUG   machine:simulation    TICK:  497, IP:   61, AR: 2047, SP: 2047, ALU:   50, ACC:   50 	save $12
-  DEBUG   machine:simulation    TICK:  501, IP:   62, AR:    3, SP: 2047, ALU:    3, ACC:   50 	load &0
-  DEBUG   machine:simulation    TICK:  505, IP:   63, AR: 2047, SP: 2047, ALU:    2, ACC:    2 	division #10
-  DEBUG   machine:simulation    TICK:  507, IP:   64, AR: 2047, SP: 2047, ALU:    0, ACC:    0 	jz 70
-  DEBUG   machine:simulation    TICK:  508, IP:   70, AR: 2047, SP: 2047, ALU:    0, ACC:    0 	pop
-  DEBUG   machine:simulation    TICK:  509, IP:   71, AR: 2047, SP: 2048, ALU:    0, ACC:    0 	load $12
-  DEBUG   machine:simulation    TICK:  514, IP:   72, AR:    3, SP: 2048, ALU:   50, ACC:   50 	jz 78
-  DEBUG   machine:simulation    TICK:  515, IP:   73, AR:    3, SP: 2048, ALU:   50, ACC:   50 	print
+  DEBUG   machine:simulation    TICK:  267, IP:   24, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	division remainder #3
+  DEBUG   machine:simulation    TICK:  268, IP:   25, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	compare #0
+  DEBUG   machine:simulation    TICK:  269, IP:   26, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	jz 29
+  DEBUG   machine:simulation    TICK:  270, IP:   27, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	load #0
+  DEBUG   machine:simulation    TICK:  271, IP:   28, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 30
+  DEBUG   machine:simulation    TICK:  272, IP:   30, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 35
+  DEBUG   machine:simulation    TICK:  273, IP:   35, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
+  DEBUG   machine:simulation    TICK:  276, IP:   36, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	division remainder #5
+  DEBUG   machine:simulation    TICK:  277, IP:   37, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	compare #0
+  DEBUG   machine:simulation    TICK:  278, IP:   38, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	jz 41
+  DEBUG   machine:simulation    TICK:  279, IP:   39, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	load #0
+  DEBUG   machine:simulation    TICK:  280, IP:   40, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 42
+  DEBUG   machine:simulation    TICK:  281, IP:   42, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 46
+  DEBUG   machine:simulation    TICK:  282, IP:   46, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
+  DEBUG   machine:simulation    TICK:  285, IP:   47, AR: 2047, SP: 2045, ALU:    2, ACC:    2 	subtraction #1
+  DEBUG   machine:simulation    TICK:  286, IP:   48, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	save &2
+  DEBUG   machine:simulation    TICK:  289, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    1 	jmp 16
+  DEBUG   machine:simulation    TICK:  290, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    1 	load &2
+  DEBUG   machine:simulation    TICK:  293, IP:   17, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	compare #0
+  DEBUG   machine:simulation    TICK:  294, IP:   18, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 21
+  DEBUG   machine:simulation    TICK:  295, IP:   19, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load #1
+  DEBUG   machine:simulation    TICK:  296, IP:   20, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jmp 22
+  DEBUG   machine:simulation    TICK:  297, IP:   22, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 50
+  DEBUG   machine:simulation    TICK:  298, IP:   23, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load &2
+  DEBUG   machine:simulation    TICK:  301, IP:   24, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	division remainder #3
+  DEBUG   machine:simulation    TICK:  302, IP:   25, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	compare #0
+  DEBUG   machine:simulation    TICK:  303, IP:   26, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 29
+  DEBUG   machine:simulation    TICK:  304, IP:   27, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load #0
+  DEBUG   machine:simulation    TICK:  305, IP:   28, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 30
+  DEBUG   machine:simulation    TICK:  306, IP:   30, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 35
+  DEBUG   machine:simulation    TICK:  307, IP:   35, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
+  DEBUG   machine:simulation    TICK:  310, IP:   36, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	division remainder #5
+  DEBUG   machine:simulation    TICK:  311, IP:   37, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	compare #0
+  DEBUG   machine:simulation    TICK:  312, IP:   38, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	jz 41
+  DEBUG   machine:simulation    TICK:  313, IP:   39, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	load #0
+  DEBUG   machine:simulation    TICK:  314, IP:   40, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jmp 42
+  DEBUG   machine:simulation    TICK:  315, IP:   42, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 46
+  DEBUG   machine:simulation    TICK:  316, IP:   46, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &2
+  DEBUG   machine:simulation    TICK:  319, IP:   47, AR: 2047, SP: 2045, ALU:    1, ACC:    1 	subtraction #1
+  DEBUG   machine:simulation    TICK:  320, IP:   48, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	save &2
+  DEBUG   machine:simulation    TICK:  323, IP:   49, AR: 2047, SP: 2045, ALU: 2047, ACC:    0 	jmp 16
+  DEBUG   machine:simulation    TICK:  324, IP:   16, AR: 2047, SP: 2045, ALU: 2047, ACC:    0 	load &2
+  DEBUG   machine:simulation    TICK:  327, IP:   17, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	compare #0
+  DEBUG   machine:simulation    TICK:  328, IP:   18, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 21
+  DEBUG   machine:simulation    TICK:  329, IP:   21, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load #0
+  DEBUG   machine:simulation    TICK:  330, IP:   22, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	jz 50
+  DEBUG   machine:simulation    TICK:  331, IP:   50, AR: 2047, SP: 2045, ALU:    0, ACC:    0 	load &0
+  DEBUG   machine:simulation    TICK:  334, IP:   51, AR: 2045, SP: 2045, ALU:   23, ACC:   23 	pop
+  DEBUG   machine:simulation    TICK:  335, IP:   52, AR: 2045, SP: 2046, ALU:   23, ACC:   23 	return
+  DEBUG   machine:simulation    TICK:  337, IP:   56, AR: 2045, SP: 2047, ALU:   56, ACC:   23 	pop
+  DEBUG   machine:simulation    TICK:  338, IP:   57, AR: 2045, SP: 2048, ALU:   56, ACC:   23 	push
+  DEBUG   machine:simulation    TICK:  340, IP:   58, AR: 2045, SP: 2047, ALU:   56, ACC:   23 	load &0
+  DEBUG   machine:simulation    TICK:  343, IP:   59, AR: 2047, SP: 2047, ALU:   23, ACC:   23 	division remainder #10
+  DEBUG   machine:simulation    TICK:  344, IP:   60, AR: 2047, SP: 2047, ALU:    3, ACC:    3 	add #48
+  DEBUG   machine:simulation    TICK:  345, IP:   61, AR: 2047, SP: 2047, ALU:   51, ACC:   51 	save $12
+  DEBUG   machine:simulation    TICK:  349, IP:   62, AR:    2, SP: 2047, ALU:    2, ACC:   51 	load &0
+  DEBUG   machine:simulation    TICK:  352, IP:   63, AR: 2047, SP: 2047, ALU:   23, ACC:   23 	division #10
+  DEBUG   machine:simulation    TICK:  353, IP:   64, AR: 2047, SP: 2047, ALU:    2, ACC:    2 	jz 70
+  DEBUG   machine:simulation    TICK:  354, IP:   65, AR: 2047, SP: 2047, ALU:    2, ACC:    2 	save &0
+  DEBUG   machine:simulation    TICK:  357, IP:   66, AR: 2047, SP: 2047, ALU: 2047, ACC:    2 	load 12
+  DEBUG   machine:simulation    TICK:  359, IP:   67, AR:   12, SP: 2047, ALU:    2, ACC:    2 	add #1
+  DEBUG   machine:simulation    TICK:  360, IP:   68, AR:   12, SP: 2047, ALU:    3, ACC:    3 	save 12
+  DEBUG   machine:simulation    TICK:  362, IP:   69, AR:   12, SP: 2047, ALU:    3, ACC:    3 	jmp 58
+  DEBUG   machine:simulation    TICK:  363, IP:   58, AR:   12, SP: 2047, ALU:    3, ACC:    3 	load &0
+  DEBUG   machine:simulation    TICK:  366, IP:   59, AR: 2047, SP: 2047, ALU:    2, ACC:    2 	division remainder #10
+  DEBUG   machine:simulation    TICK:  367, IP:   60, AR: 2047, SP: 2047, ALU:    2, ACC:    2 	add #48
+  DEBUG   machine:simulation    TICK:  368, IP:   61, AR: 2047, SP: 2047, ALU:   50, ACC:   50 	save $12
+  DEBUG   machine:simulation    TICK:  372, IP:   62, AR:    3, SP: 2047, ALU:    3, ACC:   50 	load &0
+  DEBUG   machine:simulation    TICK:  375, IP:   63, AR: 2047, SP: 2047, ALU:    2, ACC:    2 	division #10
+  DEBUG   machine:simulation    TICK:  376, IP:   64, AR: 2047, SP: 2047, ALU:    0, ACC:    0 	jz 70
+  DEBUG   machine:simulation    TICK:  377, IP:   70, AR: 2047, SP: 2047, ALU:    0, ACC:    0 	pop
+  DEBUG   machine:simulation    TICK:  378, IP:   71, AR: 2047, SP: 2048, ALU:    0, ACC:    0 	load $12
+  DEBUG   machine:simulation    TICK:  382, IP:   72, AR:    3, SP: 2048, ALU:   50, ACC:   50 	jz 78
+  DEBUG   machine:simulation    TICK:  383, IP:   73, AR:    3, SP: 2048, ALU:   50, ACC:   50 	print
   DEBUG   data_path:signal_output output: '' << '2'
-  DEBUG   machine:simulation    TICK:  516, IP:   74, AR:    3, SP: 2048, ALU:   50, ACC:   50 	load 12
-  DEBUG   machine:simulation    TICK:  519, IP:   75, AR:   12, SP: 2048, ALU:    3, ACC:    3 	subtraction #1
-  DEBUG   machine:simulation    TICK:  521, IP:   76, AR:   12, SP: 2048, ALU:    2, ACC:    2 	save 12
-  DEBUG   machine:simulation    TICK:  523, IP:   77, AR:   12, SP: 2048, ALU:    2, ACC:    2 	jmp 71
-  DEBUG   machine:simulation    TICK:  524, IP:   71, AR:   12, SP: 2048, ALU:    2, ACC:    2 	load $12
-  DEBUG   machine:simulation    TICK:  529, IP:   72, AR:    2, SP: 2048, ALU:   51, ACC:   51 	jz 78
-  DEBUG   machine:simulation    TICK:  530, IP:   73, AR:    2, SP: 2048, ALU:   51, ACC:   51 	print
+  DEBUG   machine:simulation    TICK:  384, IP:   74, AR:    3, SP: 2048, ALU:   50, ACC:   50 	load 12
+  DEBUG   machine:simulation    TICK:  386, IP:   75, AR:   12, SP: 2048, ALU:    3, ACC:    3 	subtraction #1
+  DEBUG   machine:simulation    TICK:  387, IP:   76, AR:   12, SP: 2048, ALU:    2, ACC:    2 	save 12
+  DEBUG   machine:simulation    TICK:  389, IP:   77, AR:   12, SP: 2048, ALU:    2, ACC:    2 	jmp 71
+  DEBUG   machine:simulation    TICK:  390, IP:   71, AR:   12, SP: 2048, ALU:    2, ACC:    2 	load $12
+  DEBUG   machine:simulation    TICK:  394, IP:   72, AR:    2, SP: 2048, ALU:   51, ACC:   51 	jz 78
+  DEBUG   machine:simulation    TICK:  395, IP:   73, AR:    2, SP: 2048, ALU:   51, ACC:   51 	print
   DEBUG   data_path:signal_output output: '2' << '3'
-  DEBUG   machine:simulation    TICK:  531, IP:   74, AR:    2, SP: 2048, ALU:   51, ACC:   51 	load 12
-  DEBUG   machine:simulation    TICK:  534, IP:   75, AR:   12, SP: 2048, ALU:    2, ACC:    2 	subtraction #1
-  DEBUG   machine:simulation    TICK:  536, IP:   76, AR:   12, SP: 2048, ALU:    1, ACC:    1 	save 12
-  DEBUG   machine:simulation    TICK:  538, IP:   77, AR:   12, SP: 2048, ALU:    1, ACC:    1 	jmp 71
-  DEBUG   machine:simulation    TICK:  539, IP:   71, AR:   12, SP: 2048, ALU:    1, ACC:    1 	load $12
-  DEBUG   machine:simulation    TICK:  544, IP:   72, AR:    1, SP: 2048, ALU:    0, ACC:    0 	jz 78
-  DEBUG   machine:simulation    TICK:  545, IP:   78, AR:    1, SP: 2048, ALU:    0, ACC:    0 	load 12
-  DEBUG   machine:simulation    TICK:  548, IP:   79, AR:   12, SP: 2048, ALU:    1, ACC:    1 	add #1
-  DEBUG   machine:simulation    TICK:  550, IP:   80, AR:   12, SP: 2048, ALU:    2, ACC:    2 	save 12
-  DEBUG   machine:simulation    TICK:  552, IP:   81, AR:   12, SP: 2048, ALU:    2, ACC:    2 	halt
+  DEBUG   machine:simulation    TICK:  396, IP:   74, AR:    2, SP: 2048, ALU:   51, ACC:   51 	load 12
+  DEBUG   machine:simulation    TICK:  398, IP:   75, AR:   12, SP: 2048, ALU:    2, ACC:    2 	subtraction #1
+  DEBUG   machine:simulation    TICK:  399, IP:   76, AR:   12, SP: 2048, ALU:    1, ACC:    1 	save 12
+  DEBUG   machine:simulation    TICK:  401, IP:   77, AR:   12, SP: 2048, ALU:    1, ACC:    1 	jmp 71
+  DEBUG   machine:simulation    TICK:  402, IP:   71, AR:   12, SP: 2048, ALU:    1, ACC:    1 	load $12
+  DEBUG   machine:simulation    TICK:  406, IP:   72, AR:    1, SP: 2048, ALU:    0, ACC:    0 	jz 78
+  DEBUG   machine:simulation    TICK:  407, IP:   78, AR:    1, SP: 2048, ALU:    0, ACC:    0 	load 12
+  DEBUG   machine:simulation    TICK:  409, IP:   79, AR:   12, SP: 2048, ALU:    1, ACC:    1 	add #1
+  DEBUG   machine:simulation    TICK:  410, IP:   80, AR:   12, SP: 2048, ALU:    2, ACC:    2 	save 12
+  DEBUG   machine:simulation    TICK:  412, IP:   81, AR:   12, SP: 2048, ALU:    2, ACC:    2 	halt

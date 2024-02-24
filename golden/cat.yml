@@ -34,51 +34,51 @@ output: |
   source LoC: 4 machine code instr: 17
   ============================================================
   foo
-  instr_counter: 41, ticks: 67
+  instr_counter: 41, ticks: 52
 
 log: |
   DEBUG   machine:simulation    TICK:    0, IP:    0, AR:    0, SP: 2048, ALU:    0, ACC:    0 	jmp 2
   DEBUG   machine:simulation    TICK:    1, IP:    2, AR:    0, SP: 2048, ALU:    0, ACC:    0 	input
   DEBUG   machine:simulation    TICK:    2, IP:    3, AR:    0, SP: 2048, ALU:    0, ACC:  102 	save 1
   DEBUG   machine:simulation    TICK:    4, IP:    4, AR:    1, SP: 2048, ALU:    0, ACC:  102 	load 1
-  DEBUG   machine:simulation    TICK:    7, IP:    5, AR:    1, SP: 2048, ALU:  102, ACC:  102 	compare #0
-  DEBUG   machine:simulation    TICK:    9, IP:    6, AR:    1, SP: 2048, ALU:  102, ACC:  102 	jz 9
-  DEBUG   machine:simulation    TICK:   10, IP:    7, AR:    1, SP: 2048, ALU:  102, ACC:  102 	load #1
-  DEBUG   machine:simulation    TICK:   12, IP:    8, AR:    1, SP: 2048, ALU:    1, ACC:    1 	jmp 10
-  DEBUG   machine:simulation    TICK:   13, IP:   10, AR:    1, SP: 2048, ALU:    1, ACC:    1 	jz 16
-  DEBUG   machine:simulation    TICK:   14, IP:   11, AR:    1, SP: 2048, ALU:    1, ACC:    1 	load 1
-  DEBUG   machine:simulation    TICK:   17, IP:   12, AR:    1, SP: 2048, ALU:  102, ACC:  102 	print
+  DEBUG   machine:simulation    TICK:    6, IP:    5, AR:    1, SP: 2048, ALU:  102, ACC:  102 	compare #0
+  DEBUG   machine:simulation    TICK:    7, IP:    6, AR:    1, SP: 2048, ALU:  102, ACC:  102 	jz 9
+  DEBUG   machine:simulation    TICK:    8, IP:    7, AR:    1, SP: 2048, ALU:  102, ACC:  102 	load #1
+  DEBUG   machine:simulation    TICK:    9, IP:    8, AR:    1, SP: 2048, ALU:    1, ACC:    1 	jmp 10
+  DEBUG   machine:simulation    TICK:   10, IP:   10, AR:    1, SP: 2048, ALU:    1, ACC:    1 	jz 16
+  DEBUG   machine:simulation    TICK:   11, IP:   11, AR:    1, SP: 2048, ALU:    1, ACC:    1 	load 1
+  DEBUG   machine:simulation    TICK:   13, IP:   12, AR:    1, SP: 2048, ALU:  102, ACC:  102 	print
   DEBUG   data_path:signal_output output: '' << 'f'
-  DEBUG   machine:simulation    TICK:   18, IP:   13, AR:    1, SP: 2048, ALU:  102, ACC:  102 	input
-  DEBUG   machine:simulation    TICK:   19, IP:   14, AR:    1, SP: 2048, ALU:  102, ACC:  111 	save 1
-  DEBUG   machine:simulation    TICK:   21, IP:   15, AR:    1, SP: 2048, ALU:  102, ACC:  111 	jmp 4
-  DEBUG   machine:simulation    TICK:   22, IP:    4, AR:    1, SP: 2048, ALU:  102, ACC:  111 	load 1
-  DEBUG   machine:simulation    TICK:   25, IP:    5, AR:    1, SP: 2048, ALU:  111, ACC:  111 	compare #0
-  DEBUG   machine:simulation    TICK:   27, IP:    6, AR:    1, SP: 2048, ALU:  111, ACC:  111 	jz 9
-  DEBUG   machine:simulation    TICK:   28, IP:    7, AR:    1, SP: 2048, ALU:  111, ACC:  111 	load #1
-  DEBUG   machine:simulation    TICK:   30, IP:    8, AR:    1, SP: 2048, ALU:    1, ACC:    1 	jmp 10
-  DEBUG   machine:simulation    TICK:   31, IP:   10, AR:    1, SP: 2048, ALU:    1, ACC:    1 	jz 16
-  DEBUG   machine:simulation    TICK:   32, IP:   11, AR:    1, SP: 2048, ALU:    1, ACC:    1 	load 1
-  DEBUG   machine:simulation    TICK:   35, IP:   12, AR:    1, SP: 2048, ALU:  111, ACC:  111 	print
+  DEBUG   machine:simulation    TICK:   14, IP:   13, AR:    1, SP: 2048, ALU:  102, ACC:  102 	input
+  DEBUG   machine:simulation    TICK:   15, IP:   14, AR:    1, SP: 2048, ALU:  102, ACC:  111 	save 1
+  DEBUG   machine:simulation    TICK:   17, IP:   15, AR:    1, SP: 2048, ALU:  102, ACC:  111 	jmp 4
+  DEBUG   machine:simulation    TICK:   18, IP:    4, AR:    1, SP: 2048, ALU:  102, ACC:  111 	load 1
+  DEBUG   machine:simulation    TICK:   20, IP:    5, AR:    1, SP: 2048, ALU:  111, ACC:  111 	compare #0
+  DEBUG   machine:simulation    TICK:   21, IP:    6, AR:    1, SP: 2048, ALU:  111, ACC:  111 	jz 9
+  DEBUG   machine:simulation    TICK:   22, IP:    7, AR:    1, SP: 2048, ALU:  111, ACC:  111 	load #1
+  DEBUG   machine:simulation    TICK:   23, IP:    8, AR:    1, SP: 2048, ALU:    1, ACC:    1 	jmp 10
+  DEBUG   machine:simulation    TICK:   24, IP:   10, AR:    1, SP: 2048, ALU:    1, ACC:    1 	jz 16
+  DEBUG   machine:simulation    TICK:   25, IP:   11, AR:    1, SP: 2048, ALU:    1, ACC:    1 	load 1
+  DEBUG   machine:simulation    TICK:   27, IP:   12, AR:    1, SP: 2048, ALU:  111, ACC:  111 	print
   DEBUG   data_path:signal_output output: 'f' << 'o'
-  DEBUG   machine:simulation    TICK:   36, IP:   13, AR:    1, SP: 2048, ALU:  111, ACC:  111 	input
-  DEBUG   machine:simulation    TICK:   37, IP:   14, AR:    1, SP: 2048, ALU:  111, ACC:  111 	save 1
-  DEBUG   machine:simulation    TICK:   39, IP:   15, AR:    1, SP: 2048, ALU:  111, ACC:  111 	jmp 4
-  DEBUG   machine:simulation    TICK:   40, IP:    4, AR:    1, SP: 2048, ALU:  111, ACC:  111 	load 1
-  DEBUG   machine:simulation    TICK:   43, IP:    5, AR:    1, SP: 2048, ALU:  111, ACC:  111 	compare #0
-  DEBUG   machine:simulation    TICK:   45, IP:    6, AR:    1, SP: 2048, ALU:  111, ACC:  111 	jz 9
-  DEBUG   machine:simulation    TICK:   46, IP:    7, AR:    1, SP: 2048, ALU:  111, ACC:  111 	load #1
-  DEBUG   machine:simulation    TICK:   48, IP:    8, AR:    1, SP: 2048, ALU:    1, ACC:    1 	jmp 10
-  DEBUG   machine:simulation    TICK:   49, IP:   10, AR:    1, SP: 2048, ALU:    1, ACC:    1 	jz 16
-  DEBUG   machine:simulation    TICK:   50, IP:   11, AR:    1, SP: 2048, ALU:    1, ACC:    1 	load 1
-  DEBUG   machine:simulation    TICK:   53, IP:   12, AR:    1, SP: 2048, ALU:  111, ACC:  111 	print
+  DEBUG   machine:simulation    TICK:   28, IP:   13, AR:    1, SP: 2048, ALU:  111, ACC:  111 	input
+  DEBUG   machine:simulation    TICK:   29, IP:   14, AR:    1, SP: 2048, ALU:  111, ACC:  111 	save 1
+  DEBUG   machine:simulation    TICK:   31, IP:   15, AR:    1, SP: 2048, ALU:  111, ACC:  111 	jmp 4
+  DEBUG   machine:simulation    TICK:   32, IP:    4, AR:    1, SP: 2048, ALU:  111, ACC:  111 	load 1
+  DEBUG   machine:simulation    TICK:   34, IP:    5, AR:    1, SP: 2048, ALU:  111, ACC:  111 	compare #0
+  DEBUG   machine:simulation    TICK:   35, IP:    6, AR:    1, SP: 2048, ALU:  111, ACC:  111 	jz 9
+  DEBUG   machine:simulation    TICK:   36, IP:    7, AR:    1, SP: 2048, ALU:  111, ACC:  111 	load #1
+  DEBUG   machine:simulation    TICK:   37, IP:    8, AR:    1, SP: 2048, ALU:    1, ACC:    1 	jmp 10
+  DEBUG   machine:simulation    TICK:   38, IP:   10, AR:    1, SP: 2048, ALU:    1, ACC:    1 	jz 16
+  DEBUG   machine:simulation    TICK:   39, IP:   11, AR:    1, SP: 2048, ALU:    1, ACC:    1 	load 1
+  DEBUG   machine:simulation    TICK:   41, IP:   12, AR:    1, SP: 2048, ALU:  111, ACC:  111 	print
   DEBUG   data_path:signal_output output: 'fo' << 'o'
-  DEBUG   machine:simulation    TICK:   54, IP:   13, AR:    1, SP: 2048, ALU:  111, ACC:  111 	input
-  DEBUG   machine:simulation    TICK:   55, IP:   14, AR:    1, SP: 2048, ALU:  111, ACC:    0 	save 1
-  DEBUG   machine:simulation    TICK:   57, IP:   15, AR:    1, SP: 2048, ALU:  111, ACC:    0 	jmp 4
-  DEBUG   machine:simulation    TICK:   58, IP:    4, AR:    1, SP: 2048, ALU:  111, ACC:    0 	load 1
-  DEBUG   machine:simulation    TICK:   61, IP:    5, AR:    1, SP: 2048, ALU:    0, ACC:    0 	compare #0
-  DEBUG   machine:simulation    TICK:   63, IP:    6, AR:    1, SP: 2048, ALU:    0, ACC:    0 	jz 9
-  DEBUG   machine:simulation    TICK:   64, IP:    9, AR:    1, SP: 2048, ALU:    0, ACC:    0 	load #0
-  DEBUG   machine:simulation    TICK:   66, IP:   10, AR:    1, SP: 2048, ALU:    0, ACC:    0 	jz 16
-  DEBUG   machine:simulation    TICK:   67, IP:   16, AR:    1, SP: 2048, ALU:    0, ACC:    0 	halt
+  DEBUG   machine:simulation    TICK:   42, IP:   13, AR:    1, SP: 2048, ALU:  111, ACC:  111 	input
+  DEBUG   machine:simulation    TICK:   43, IP:   14, AR:    1, SP: 2048, ALU:  111, ACC:    0 	save 1
+  DEBUG   machine:simulation    TICK:   45, IP:   15, AR:    1, SP: 2048, ALU:  111, ACC:    0 	jmp 4
+  DEBUG   machine:simulation    TICK:   46, IP:    4, AR:    1, SP: 2048, ALU:  111, ACC:    0 	load 1
+  DEBUG   machine:simulation    TICK:   48, IP:    5, AR:    1, SP: 2048, ALU:    0, ACC:    0 	compare #0
+  DEBUG   machine:simulation    TICK:   49, IP:    6, AR:    1, SP: 2048, ALU:    0, ACC:    0 	jz 9
+  DEBUG   machine:simulation    TICK:   50, IP:    9, AR:    1, SP: 2048, ALU:    0, ACC:    0 	load #0
+  DEBUG   machine:simulation    TICK:   51, IP:   10, AR:    1, SP: 2048, ALU:    0, ACC:    0 	jz 16
+  DEBUG   machine:simulation    TICK:   52, IP:   16, AR:    1, SP: 2048, ALU:    0, ACC:    0 	halt
